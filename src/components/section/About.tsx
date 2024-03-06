@@ -143,11 +143,7 @@ const About = ({ id, className }: { id: string; className?: string }) => {
                         >
                             Contact Me
                         </Button>
-                        <Button
-                            component="a"
-                            href="https://drive.google.com/file/d/1mxpy850jKlHOsra874GDEauxnFQiwTkV/view?usp=sharing"
-                            target="_blank"
-                        >
+                        <Button component="a" href="/cv" target="_blank">
                             Download CV
                         </Button>
                     </div>
