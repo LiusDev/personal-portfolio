@@ -105,7 +105,7 @@ const SideBar = ({ className }: { className?: string }) => {
                                     to={item.href}
                                     spy={true}
                                     smooth={true}
-                                    offset={-100}
+                                    offset={-50}
                                     duration={500}
                                     onSetActive={() =>
                                         handleSetActive(item.href)

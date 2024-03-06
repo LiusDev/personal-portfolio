@@ -27,6 +27,7 @@ const ProjectCard = ({
                 className={cn(
                     `flex flex-col gap-2 overflow-hidden ${className}`
                 )}
+                data-aos="fade-up"
             >
                 <img
                     src={project.image}
