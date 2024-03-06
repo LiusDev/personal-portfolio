@@ -26,6 +26,7 @@ type ButtonProps = {
     variant?: ButtonVariant
     component?: ButtonComponent
     leftSection?: React.ReactNode
+    loading?: boolean
     className?: string
     children?: React.ReactNode
 } & (

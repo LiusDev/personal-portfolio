@@ -6,6 +6,7 @@ import { Project } from "@/types"
 import { useDisclosure } from "@mantine/hooks"
 import ProjectModal from "./ProjectModal"
 import { useState } from "react"
+import Badge from "./Badge"
 
 const ProjectCard = ({
     project,
@@ -39,9 +40,7 @@ const ProjectCard = ({
                         <h2 className="font-semibold text-lg line-clamp-2">
                             {project.name}
                         </h2>
-                        <p className="w-fit text-sm mb-3 bg-primary text-secondary-dark inline-block px-2 py-[2px] rounded-md">
-                            {project.createdAt}
-                        </p>
+                        <Badge>{project.createdAt}</Badge>
                         <p>{project.description}</p>
                     </div>
                     <div className="flex justify-end">

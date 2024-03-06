@@ -1,5 +1,6 @@
 import React from "react"
 import type { ComponentPropsWithoutRef } from "react"
+import Badge from "./Badge"
 
 export interface TimelineItem {
     title: string
@@ -31,9 +32,7 @@ const Timeline = ({ title, info, className, ...props }: GroupProps) => {
                         <h4 className="dark:text-secondary-dark text-xl font-semibold mb-3 leading-6 transition-all duration-300">
                             {item.title}
                         </h4>
-                        <p className="text-sm mb-3 bg-primary text-secondary-dark inline-block px-2 py-[2px] rounded-md">
-                            {item.time}
-                        </p>
+                        <Badge>{item.time}</Badge>
                         <p className="mb-2 italic dark:text-secondary-dark transition-all duration-300">
                             {item.position}
                         </p>

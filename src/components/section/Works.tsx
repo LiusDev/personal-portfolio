@@ -94,7 +94,7 @@ const Works = ({ id, className }: { id: string; className?: string }) => {
             id={id}
             className={`w-full md:mt-0 px-6 md:px-8 mb-8 ${className}`}
         >
-            <div className="max-w-screen-lg m-auto">
+            <div className="max-w-screen-lg m-auto" data-aos="fade-up">
                 <Title>Recent Work</Title>
             </div>
             <div className="max-w-screen-lg m-auto">

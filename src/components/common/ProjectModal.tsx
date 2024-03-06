@@ -55,21 +55,21 @@ const ProjectModal = ({ project, show, setClose }: ProjectModalProps) => {
                                         {project.description}
                                     </p>
 
-                                    <ul className="list-disc">
-                                        <li className="ml-4 mb-2">
+                                    <ul>
+                                        <li className="relative dark:text-secondary-dark mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-primary before:top-2 before:left-0 transition-all duration-300">
                                             <span className="font-semibold">
                                                 Created:
                                             </span>{" "}
                                             {project.createdAt}
                                         </li>
-                                        <li className="ml-4 mb-2">
+                                        <li className="relative dark:text-secondary-dark mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-primary before:top-2 before:left-0 transition-all duration-300">
                                             <span className="font-semibold">
                                                 Technologies:
                                             </span>{" "}
                                             {project.techStack.join(", ")}
                                         </li>
                                         {project.repo && (
-                                            <li className="ml-4 mb-2">
+                                            <li className="relative dark:text-secondary-dark mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-primary before:top-2 before:left-0 transition-all duration-300">
                                                 <span className="font-semibold">
                                                     Github:
                                                 </span>{" "}
@@ -97,7 +97,7 @@ const ProjectModal = ({ project, show, setClose }: ProjectModalProps) => {
                                             </li>
                                         )}
                                         {project.link && (
-                                            <li className="ml-4 mb-2">
+                                            <li className="relative dark:text-secondary-dark mb-2 pl-4 before:absolute before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-primary before:top-2 before:left-0 transition-all duration-300">
                                                 <span className="font-semibold">
                                                     Live site:
                                                 </span>{" "}

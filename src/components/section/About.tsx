@@ -145,7 +145,7 @@ const About = ({ id, className }: { id: string; className?: string }) => {
                         </Button>
                         <Button
                             component="a"
-                            href="https://drive.google.com/file/d/1qVihT_vOMWhuJRmTovmUXGE6aMMAvHQO"
+                            href="https://drive.google.com/file/d/1mxpy850jKlHOsra874GDEauxnFQiwTkV/view?usp=sharing"
                             target="_blank"
                         >
                             Download CV
