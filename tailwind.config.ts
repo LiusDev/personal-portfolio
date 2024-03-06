@@ -26,6 +26,7 @@ const config: Config = {
                 button: "4px 4px #0b0b13",
                 "button-dark": "4px 4px #f5f5f5",
                 "button-hover": "4px 4px #2563eb",
+                box: "8px 8px #2563eb",
             },
         },
     },

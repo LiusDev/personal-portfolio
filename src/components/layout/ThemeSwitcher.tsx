@@ -11,6 +11,13 @@ const ThemeSwitcher = () => {
     }
 
     useEffect(() => {
+        const prefersDarkMode =
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+        setLightMode(!prefersDarkMode)
+    }, [])
+
+    useEffect(() => {
         switch (lightMode) {
             case true:
                 document.documentElement.classList.remove("dark")
@@ -28,7 +35,7 @@ const ThemeSwitcher = () => {
             component="button"
             variant="icon"
             onClick={handleThemeChange}
-            className="fixed z-50 top-5 right-5 py-2 px-2 flex dark:bg-secondary-dark bg-tertiary-dark rounded-full transition-all duration-300"
+            className="fixed z-40 top-5 right-5 py-2 px-2 flex dark:bg-secondary-dark bg-tertiary-dark rounded-full transition-all duration-300"
         >
             <Icon className="dark:text-tertiary-dark text-secondary-dark text-4xl" />
         </Button>

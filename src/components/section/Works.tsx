@@ -1,43 +1,90 @@
-import React, { SetStateAction, useEffect, useState } from "react"
-import { Title, Button } from ".."
-import { motion, AnimatePresence } from "framer-motion"
+import { Title } from ".."
 import ProjectCard from "../common/ProjectCard"
+import { Project } from "@/types"
 
-const categories: string[] = ["All", "NextJS", "TailwindCSS", "Framer Motion"]
-
-const projects = [
+const projects: Project[] = [
     {
-        image: "https://quydxportfolio.netlify.app/assets/img/portfolio/theband.webp",
-        name: "The Band Website",
+        image: "/projects/qizz.png",
+        name: "Qizz App",
+        role: "Project Manager, Fullstack Developer",
         description:
-            "A website for a band. This website is built with NextJS, TailwindCSS, and Framer Motion.",
-        createdAt: "31 March 2022",
-        role: "Frontend",
-        techStack: ["NextJS", "TailwindCSS", "Framer Motion"],
-        link: "https://quydxtheband.netlify.app",
-        repo: "https://github.com/liusdev/theband",
+            "A web app that helps create sets of questions and use them for real-time quizzes. Used github actions to implement CI/CD pipeline.",
+        createdAt: "Jan 2024",
+        techStack: [
+            "NextJS",
+            "TailwindCSS",
+            "Mantine",
+            "Framer Motion",
+            "Spring Boot",
+            "WebSocket",
+            "MySQL",
+            "Cloudflare",
+            "Google Cloud",
+            "Docker",
+            "Github Actions",
+        ],
+        repo: [
+            "https://github.com/HN2B2/qizz-client",
+            "https://github.com/HN2B2/qizz-backend",
+        ],
     },
     {
-        image: "https://quydxportfolio.netlify.app/assets/img/portfolio/theband.webp",
-        name: "The Band Website",
+        image: "/projects/js-g12.png",
+        name: "JS Club's 12th Gen Membership Recruitment Landing Page",
+        role: "Frontend Developer",
         description:
-            "A website for a band. This website is built with NextJS, TailwindCSS, and Framer Motion.",
-        createdAt: "31 March 2022",
-        role: "Frontend",
-        techStack: ["Framer Motion"],
-        link: "https://quydxtheband.netlify.app",
-        repo: "https://github.com/liusdev/theband",
+            "Landing page promoting the 12th generation member recruitment event of the Japanese Software Engineers Club - FPT University Hanoi",
+        createdAt: "Jan 2024",
+        techStack: ["NextJS", "TailwindCSS", "Cloudflare"],
+        link: "https://ttv.jsclub.dev/",
     },
     {
-        image: "https://quydxportfolio.netlify.app/assets/img/portfolio/theband.webp",
-        name: "The Band Website",
+        image: "/projects/cmed.png",
+        name: "CMED.VN",
+        role: "Fullstack Developer",
         description:
-            "A website for a band. This website is built with NextJS, TailwindCSS, and Framer Motion.",
-        createdAt: "31 March 2022",
-        role: "Frontend",
-        techStack: ["TailwindCSS"],
-        link: "https://quydxtheband.netlify.app",
-        repo: "https://github.com/liusdev/theband",
+            "Developed and maintained official website of CMED medical business and operations consulting JSC",
+        createdAt: "Nov 2023",
+        techStack: [
+            "NextJS",
+            "React-I18N",
+            "NestJS",
+            "MySQL",
+            "Vercel",
+            "cPanel hosting",
+        ],
+        link: "https://www.cmed.vn",
+    },
+    {
+        image: "/projects/ci2023.png",
+        name: "JS Club's Coding Inspiration 2023 Landing Page",
+        role: "Frontend Developer",
+        description:
+            "Official landing page of the Coding Inspiration 2023 organized by JS club",
+        createdAt: "Aug 2023",
+        techStack: ["NextJS", "TailwindCSS", "Cloudflare"],
+        link: "https://ci2023.jsclub.dev/",
+    },
+    {
+        image: "/projects/unitech-blog.png",
+        name: "Unitech Blog",
+        role: "Frontend Developer",
+        description:
+            "UniTech Blog offers valuable articles on software skills for programmers, providing tips and tricks for the information technology industry",
+        createdAt: "Jan 2023",
+        techStack: ["NextJS", "TailwindCSS", "HygraphCMS", "Vercel"],
+        link: "https://unitym-blog.vercel.app/",
+        repo: ["https://github.com/LiusDev/unitech-blog"],
+    },
+    {
+        image: "/projects/personal-portfolio.png",
+        name: "Personal Portfolio",
+        role: "Frontend Developer",
+        description: "My personal portfolio website",
+        createdAt: "Jan 2023",
+        techStack: ["NextJS", "TailwindCSS", "HeadlessUI", "Vercel"],
+        link: "https://quydx.id.vn",
+        repo: ["https://github.com/LiusDev/personal-portfolio"],
     },
 ]
 
