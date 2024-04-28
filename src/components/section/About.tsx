@@ -3,7 +3,6 @@ import Image from "next/image"
 import { Title, Button, Timeline } from ".."
 import { cn } from "@/utils"
 import { TimelineItem } from "../common/Timeline"
-import { title } from "process"
 
 const skills = [
     {
@@ -17,6 +16,18 @@ const skills = [
     {
         title: "Tools",
         detail: "Figma, Git, Github, Github Actions, Docker, MySQL, Cloudflare, Google Cloud",
+    },
+]
+
+const works = [
+    {
+        title: "Viettel Telecom",
+        time: "04/2024",
+        position: "Backend Developer",
+        details: [
+            "Developed and maintained backend services for the company's internal systems",
+            "Participated in the development of a new system for managing customer information",
+        ],
     },
 ]
 
@@ -151,6 +162,11 @@ const About = ({ id, className }: { id: string; className?: string }) => {
             </div>
             <div className="flex flex-col md:flex-row w-full max-w-screen-lg gap-16">
                 <div className="w-full md:w-1/2">
+                    <Timeline
+                        data-aos="fade-up"
+                        title="Work Experience"
+                        info={works}
+                    />
                     <Timeline
                         data-aos="fade-up"
                         title="Education"
