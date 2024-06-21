@@ -64,6 +64,17 @@ const activities = [
 
 const awards = [
     {
+        title: "VPBank Technology Hackathon 2024",
+        time: "04/2024 - 06/2024",
+        position: "Champion",
+        details: [
+            "An application designed to provide various functionalities to help users create and manage architecture design diagrams more effectively. With the power of ChatGPT 4, our application can provide users the ability to create architecture design from scratch with a more interactive and user-friendly experience.",
+            "Beat over 150 teams from different Companies and Universities.",
+            <a href="https://vnexpress.net/vpbank-technology-hackathon-2024-tim-ra-nha-vo-dich-4755630.html" target="_blank" rel="noopener">VPBank Technology Hackathon 2024 tìm ra nhà vô địch</a>,
+            <a href="https://www.baogiaothong.vn/chung-ket-cuoc-thi-technology-hackathon-2024-hanh-trinh-kien-tao-tuong-lai-cung-vpbank-192240607102843928.htm" target="_blank" rel="noopener">Chung kết cuộc thi Technology Hackathon 2024</a>
+        ],
+    },
+    {
         title: "F-Talent Code 2023",
         time: "10/2023",
         position: "Consolation prizes",

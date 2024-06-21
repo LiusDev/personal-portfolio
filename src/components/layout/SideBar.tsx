@@ -144,7 +144,7 @@ const SideBar = ({ className }: { className?: string }) => {
                     ))}
                 </ul>
                 <p className="flex items-center justify-center text-tertiary-dark/60 dark:text-secondary-dark/60 transition-all duration-300">
-                    Last updated: Apr 28, 2024
+                    Last updated: June 2024
                 </p>
             </div>
         </aside>
