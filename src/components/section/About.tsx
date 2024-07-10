@@ -72,9 +72,7 @@ const awards = [
             "Aims to improve learning efficiency, enhance creative thinking, and strengthen problem-solving skills.",
             "Contributes to advancing the quality of education and fostering an innovative learning environment for future generations.",
             "Competed against 20 teams and over 80 participants from across the country.",
-            "Organizer: FUNiX",
-            <a href="https://vnexpress.net/vpbank-technology-hackathon-2024-tim-ra-nha-vo-dich-4755630.html" target="_blank" rel="noopener">VPBank Technology Hackathon 2024 tìm ra nhà vô địch</a>,
-            <a href="https://www.baogiaothong.vn/chung-ket-cuoc-thi-technology-hackathon-2024-hanh-trinh-kien-tao-tuong-lai-cung-vpbank-192240607102843928.htm" target="_blank" rel="noopener">Chung kết cuộc thi Technology Hackathon 2024</a>
+            "Organizer: FUNiX"
         ],
     },
     {
@@ -192,20 +190,19 @@ const About = ({ id, className }: { id: string; className?: string }) => {
                         data-aos="fade-up"
                         title="Work Experience"
                         info={works}
-                    />
+                    /> 
                     <Timeline
-                        data-aos="fade-up"
-                        title="Education"
-                        info={education}
-                    />
-<Timeline
                         data-aos="fade-up"
                         title="Honors & Awards"
                         info={awards}
                     />
                 </div>
                 <div className="w-full md:w-1/2">
-                    
+                    <Timeline
+                        data-aos="fade-up"
+                        title="Education"
+                        info={education}
+                    />
                     <Timeline
                         data-aos="fade-up"
                         title="Activities"
