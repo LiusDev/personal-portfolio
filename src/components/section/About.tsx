@@ -62,7 +62,7 @@ const activities = [
     },
 ]
 
-const awards = 
+const awards = [
     {
         title: "GenAI Hackathon 2024",
         time: "06/2024 - 07/2024",
