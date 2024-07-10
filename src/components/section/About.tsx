@@ -193,13 +193,6 @@ const About = ({ id, className }: { id: string; className?: string }) => {
                     /> 
                     <Timeline
                         data-aos="fade-up"
-                        title="Honors & Awards"
-                        info={awards}
-                    />
-                </div>
-                <div className="w-full md:w-1/2">
-                    <Timeline
-                        data-aos="fade-up"
                         title="Education"
                         info={education}
                     />
@@ -212,6 +205,13 @@ const About = ({ id, className }: { id: string; className?: string }) => {
                         data-aos="fade-up"
                         title="Certifications"
                         info={certifications}
+                    />
+                </div>
+                <div className="w-full md:w-1/2">
+                    <Timeline
+                        data-aos="fade-up"
+                        title="Honors & Awards"
+                        info={awards}
                     />
                 </div>
             </div>
