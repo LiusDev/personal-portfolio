@@ -28,11 +28,9 @@ const works = [
             "Was specially recruited after winning VPBank Technology Hackathon 2024",
             "Collaborating with cross-functional teams to understand business requirements and translate them into technical solutions.",
             "Developing and maintaining both front-end and back-end features of the business customer application, ensuring seamless user experiences.",
-            "Implementing responsive design principles to create intuitive interfaces accessible across various devices.",
             "Optimizing application performance and troubleshooting issues to enhance reliability and efficiency.",
             "Integrating third-party APIs and services to extend application functionalities as per business needs.",
             "Conducting thorough testing and debugging to maintain code integrity and ensure robust deployment.",
-            "Remaining updated with industry trends and best practices to continually improve application architecture and development processes.",
         ]
     },
     {
@@ -216,17 +214,17 @@ const About = ({ id, className }: { id: string; className?: string }) => {
                         title="Activities"
                         info={activities}
                     />
-                    <Timeline
-                        data-aos="fade-up"
-                        title="Certifications"
-                        info={certifications}
-                    />
                 </div>
                 <div className="w-full md:w-1/2">
                     <Timeline
                         data-aos="fade-up"
                         title="Honors & Awards"
                         info={awards}
+                    />
+                    <Timeline
+                        data-aos="fade-up"
+                        title="Certifications"
+                        info={certifications}
                     />
                 </div>
             </div>
