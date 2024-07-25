@@ -21,8 +21,23 @@ const skills = [
 
 const works = [
     {
+        title: "VPBank",
+        time: "08/2024 - Now",
+        position: "Fullstack Developer",
+        details: [
+            "Was specially recruited after winning VPBank Technology Hackathon 2024",
+            "Collaborating with cross-functional teams to understand business requirements and translate them into technical solutions.",
+            "Developing and maintaining both front-end and back-end features of the business customer application, ensuring seamless user experiences.",
+            "Implementing responsive design principles to create intuitive interfaces accessible across various devices.",
+            "Optimizing application performance and troubleshooting issues to enhance reliability and efficiency.",
+            "Integrating third-party APIs and services to extend application functionalities as per business needs.",
+            "Conducting thorough testing and debugging to maintain code integrity and ensure robust deployment.",
+            "Remaining updated with industry trends and best practices to continually improve application architecture and development processes.",
+        ]
+    },
+    {
         title: "Viettel Telecom",
-        time: "04/2024",
+        time: "04/2024 - 08/2024",
         position: "Backend Developer",
         details: [
             "Developed and maintained backend services for the company's internal systems",
