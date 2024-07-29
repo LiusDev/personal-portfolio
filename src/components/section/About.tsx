@@ -96,6 +96,7 @@ const awards = [
             "An application designed to provide various functionalities to help users create and manage architecture design diagrams more effectively. With the power of ChatGPT 4, our application can provide users the ability to create architecture design from scratch with a more interactive and user-friendly experience.",
             "Beat over 150 teams from different Companies and Universities.",
             "Organizer: VPBank, AWS",
+            <a href="https://dantri.com.vn/giao-duc/nam-sinh-vien-it-gianh-quan-quan-lap-trinh-duoc-dac-cach-tuyen-dung-du-chua-tot-nghiep-20240729151250529.htm" target="_blank" rel="noopener">Nam sinh viên IT giành quán quân lập trình, được đặc cách tuyển dụng dù chưa tốt nghiệp</a>,
             <a href="https://vnexpress.net/vpbank-technology-hackathon-2024-tim-ra-nha-vo-dich-4755630.html" target="_blank" rel="noopener">VPBank Technology Hackathon 2024 tìm ra nhà vô địch</a>,
             <a href="https://www.baogiaothong.vn/chung-ket-cuoc-thi-technology-hackathon-2024-hanh-trinh-kien-tao-tuong-lai-cung-vpbank-192240607102843928.htm" target="_blank" rel="noopener">Chung kết cuộc thi Technology Hackathon 2024</a>
         ],
