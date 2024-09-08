@@ -11,6 +11,8 @@ import { useEffect } from "react"
 import "aos/dist/aos.css"
 import Head from "next/head"
 import { Rubik } from "next/font/google"
+import { AppShell, Burger } from "@mantine/core"
+import { useDisclosure } from "@mantine/hooks"
 
 const rubik = Rubik({ subsets: ["latin"] })
 
@@ -23,6 +25,9 @@ export default function Home() {
             delay: 100,
         })
     }, [])
+
+    const [navbarOpened, { toggle }] = useDisclosure()
+
     return (
         <>
             <Head>
@@ -41,16 +46,34 @@ export default function Home() {
                     content="I am a software enginner with more than 1 year of experience, but the products I have made are carefully invested. I am also an active person at work, constantly learning new skills."
                 ></meta>
             </Head>
-            <ThemeSwitcher />
-            <SideBar />
-            <main
-                className={` bg-secondary dark:bg-tertiary min-h-screen xl:ml-64 overflow-hidden transition-all duration-300 ${rubik.className}`}
+            <AppShell
+                navbar={{
+                    width: 256,
+                    breakpoint: 1280,
+                    collapsed: { mobile: !navbarOpened },
+                }}
+                withBorder={false}
             >
-                <Hero id="hero" />
-                <About id="about" />
-                <Works id="works" />
-                <Contact id="contact" />
-            </main>
+                <AppShell.Navbar className="overflow-hidden bg-secondary-dark dark:bg-tertiary-dark shadow-xl dark:shadow-none transition-all duration-300">
+                    <SideBar opened={navbarOpened} toggle={toggle} />
+                </AppShell.Navbar>
+                <AppShell.Main
+                    className={` bg-secondary dark:bg-tertiary overflow-hidden transition-all duration-300 ${rubik.className}`}
+                >
+                    <div className="fixed z-40 top-5 left-5 py-2 px-2 flex dark:bg-secondary-dark bg-tertiary-dark rounded-full transition-all duration-300">
+                        <Burger
+                            opened={navbarOpened}
+                            onClick={toggle}
+                            size={14}
+                        />
+                    </div>
+                    <ThemeSwitcher />
+                    <Hero id="hero" />
+                    <About id="about" />
+                    <Works id="works" />
+                    <Contact id="contact" />
+                </AppShell.Main>
+            </AppShell>
         </>
     )
 }

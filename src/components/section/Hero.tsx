@@ -17,7 +17,7 @@ const Hero = ({ id, className = "" }: { id: string; className?: string }) => {
         <section
             id={id}
             className={cn(
-                `relative w-full min-h-screen flex items-center justify-center px-6 md:px-8 after:z-0 after:content-[''] after:bg-secondary-dark dark:after:bg-tertiary-dark after:absolute after:-right-[20vh] after:-top-[20vh] after:w-[100vh] after:h-screen after:rounded-full after:transition-all after:duration-300 ${className}`
+                `relative w-full min-h-screen flex items-center justify-center px-6 md:px-8 after:z-0 after:content-[''] after:bg-secondary-dark dark:after:bg-tertiary-dark after:absolute after:-right-[20vh] after:-top-[20vh] after:w-[100vh] after:h-screen after:rounded-full 0 ${className}`
             )}
         >
             <div className="flex flex-col md:flex-row items-center justify-center max-w-screen-lg z-10">

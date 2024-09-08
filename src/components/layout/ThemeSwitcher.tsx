@@ -37,7 +37,7 @@ const ThemeSwitcher = () => {
             onClick={handleThemeChange}
             className="fixed z-40 top-5 right-5 py-2 px-2 flex dark:bg-secondary-dark bg-tertiary-dark rounded-full transition-all duration-300"
         >
-            <Icon className="dark:text-tertiary-dark text-secondary-dark text-4xl" />
+            <Icon className="dark:text-tertiary-dark text-secondary-dark text-2xl xl:text-4xl" />
         </Button>
     )
 }
