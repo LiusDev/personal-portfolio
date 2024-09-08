@@ -1,10 +1,8 @@
 import AOS from "aos"
 import {
     About,
-    Button,
     Contact,
     Hero,
-    MetaMessenger,
     SideBar,
     ThemeSwitcher,
     Works,
@@ -53,7 +51,6 @@ export default function Home() {
                 <Works id="works" />
                 <Contact id="contact" />
             </main>
-            <MetaMessenger />
         </>
     )
 }
