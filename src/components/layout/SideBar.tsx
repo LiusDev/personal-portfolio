@@ -4,6 +4,7 @@ import { TfiHome, TfiIdBadge, TfiBookmarkAlt, TfiEmail } from "react-icons/tfi"
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa"
 import { Button } from ".."
 import { AppShell, Burger } from "@mantine/core"
+import { TiTimes } from "react-icons/ti"
 
 const info = {
     name: "dao xuan quy",
@@ -79,12 +80,12 @@ const SideBar = ({
                 grow
                 className="relative after:content-[''] after:absolute after:-top-[180px] after:-left-[45px] after:w-[310px] after:h-[310px] after:bg-primary after:rounded-full after:shadow-lg dark:after:shadow-none"
             >
-                <Burger
-                    opened={opened}
+                <button
                     onClick={toggle}
-                    color="white"
-                    className="block xl:hidden absolute z-50 top-5 right-5"
-                />
+                    className="block xl:hidden absolute top-5 right-5"
+                >
+                    <TiTimes className="dark:text-secondary-dark text-tertiary-dark text-4xl" />
+                </button>
                 <div className="relative mt-16 z-10 w-full flex flex-col justify-center items-center">
                     <div className="w-100 h-100 overflow-hidden rounded-full border-secondary-dark border-4">
                         <Image

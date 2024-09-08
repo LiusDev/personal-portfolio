@@ -12,7 +12,8 @@ import "aos/dist/aos.css"
 import Head from "next/head"
 import { Rubik } from "next/font/google"
 import { AppShell, Burger } from "@mantine/core"
-import { useDisclosure } from "@mantine/hooks"
+import { useColorScheme, useDisclosure } from "@mantine/hooks"
+import { TiThMenu } from "react-icons/ti"
 
 const rubik = Rubik({ subsets: ["latin"] })
 
@@ -27,7 +28,7 @@ export default function Home() {
     }, [])
 
     const [navbarOpened, { toggle }] = useDisclosure()
-
+    const colorScheme = useColorScheme()
     return (
         <>
             <Head>
@@ -60,13 +61,12 @@ export default function Home() {
                 <AppShell.Main
                     className={` bg-secondary dark:bg-tertiary overflow-hidden transition-all duration-300 ${rubik.className}`}
                 >
-                    <div className="fixed z-40 top-5 left-5 py-2 px-2 flex dark:bg-secondary-dark bg-tertiary-dark rounded-full transition-all duration-300">
-                        <Burger
-                            opened={navbarOpened}
-                            onClick={toggle}
-                            size={14}
-                        />
-                    </div>
+                    <button
+                        onClick={toggle}
+                        className="fixed z-40 top-5 left-5 py-2.5 px-2.5 flex dark:bg-secondary-dark bg-tertiary-dark rounded-full transition-all duration-300"
+                    >
+                        <TiThMenu className="dark:text-tertiary-dark text-secondary-dark text-xl xl:text-4xl" />
+                    </button>
                     <ThemeSwitcher />
                     <Hero id="hero" />
                     <About id="about" />
